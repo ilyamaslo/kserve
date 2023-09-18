@@ -34,15 +34,15 @@ exclude = ["kserve/storage/test"]
 
 [tool.poetry.dependencies]
 python = ">=3.8,<3.12"
-uvicorn = { version = "^0.19.0", extras = ["standard"] }
-fastapi = "^0.95.0"
+uvicorn = { version = "^0.23.2", extras = ["standard"] }
+fastapi = "<1"
 cloudevents = "^1.6.2"
 six = "^1.16.0"
 kubernetes = ">=23.3.0"
 python-dateutil = "^2.8.0"
 numpy = "^1.23.5"
 psutil = "^5.9.0"
-ray = { version = "~2.4.0", extras = ["serve"] }
+ray = { version = "^2.2.0", extras = ["serve"] }
 grpcio = "^1.49.1"
 protobuf = "^3.19.0"
 prometheus-client = "^0.13.1"
